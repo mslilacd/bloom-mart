@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Bloom Mart Management System - High-End Enterprise Theme
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-main: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #0f172a;
+    --text-muted: #64748b;
+    --accent-teal: #0d9488;
+    --accent-teal-hover: #0f766e;
+    --accent-teal-light: #f0fdf4;
+    --border-light: #e2e8f0;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+    --shadow-elevated: 0 12px 28px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary) !important;
+    letter-spacing: -0.01em;
+}
+
+/* Glassmorphism Header */
+.top-nav {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.brand-badge {
+    background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 2px 6px rgba(13, 148, 136, 0.25);
+}
+
+/* Enterprise Dashboard Cards */
+.saas-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-subtle);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.saas-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-elevated);
+    border-color: #cbd5e1;
+}
+
+/* Icon Containers */
+.icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    background-color: var(--accent-teal-light);
+    color: var(--accent-teal);
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(13, 148, 136, 0.15);
+}
+
+/* Primary Action Buttons */
+.btn-saas {
+    background-color: var(--text-primary);
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 10px 18px;
+    border-radius: var(--radius-md);
+    border: none;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.btn-saas:hover {
+    background-color: var(--accent-teal);
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+.fw-extrabold {
+    font-weight: 800 !important;
+}
